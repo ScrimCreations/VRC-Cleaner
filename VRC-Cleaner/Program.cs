@@ -16,8 +16,10 @@ namespace VRC_Cleaner
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Cache Path: " + VRChat_C);
+
             Console.ForegroundColor = ConsoleColor.White;
             Console.Title = "VRChat Cache Cleaner By Scrim";
+
             Console.WriteLine("Press ANY KEY to clear VRC Cache:");
             Console.ReadKey();
 
@@ -27,6 +29,7 @@ namespace VRC_Cleaner
                 Console.WriteLine("VRChat cache found!");
                 Console.WriteLine("Deleting...");
                 Directory.Delete(VRChat_C, true);
+
                 if (!Directory.Exists(VRChat_C))
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
